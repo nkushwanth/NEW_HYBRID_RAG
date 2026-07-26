@@ -1,0 +1,17 @@
+langchain
+langchain-community
+langchain-classic
+langchain-groq
+langchain-cohere
+langchain-huggingface
+langchain-qdrant
+langchain-text-splitters
+redis
+redisvl
+qdrant-client
+PyMuPDF
+tqdm
+python-dotenv
+sentence-transformers
+rank-bm25
+torch
