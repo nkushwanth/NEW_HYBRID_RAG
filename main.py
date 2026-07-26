@@ -1,6 +1,5 @@
 import time
 from langchain_huggingface import HuggingFaceEmbeddings
-import torch
 
 from src.config import Config
 from src.cache.semantic_cache import SemanticCacheWrapper
