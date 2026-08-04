@@ -106,38 +106,6 @@ Clear the cache to force reprocessing:
 rm -rf cache/*
 ```
 
-## Managing Dependencies
-
-### Adding New Dependencies
-
-To add a new package:
-
-```bash
-uv add package_name
-```
-
-### Updating Dependencies
-
-Update all packages:
-
-```bash
-uv sync --upgrade
-```
-
-Update a specific package:
-
-```bash
-uv pip install --upgrade package_name
-```
-
-### Viewing Dependencies
-
-View your project's dependencies:
-
-```bash
-uv pip list
-```
-
 ## Configuration
 
 Edit `pyproject.toml` to modify:
@@ -171,8 +139,6 @@ The `src/` directory contains the core modules:
 ### Best Practices
 
 - Use `uv sync` to maintain consistent environments across team members
-- Commit `uv.lock` to version control for reproducible builds
-- Create new branches for features: `git checkout -b feature/feature-name`
 
 ## Performance Tips
 
@@ -210,15 +176,14 @@ uv sync
 
 ## API Keys and Environment Variables
 
-If your project requires API keys (OpenAI, Anthropic, etc.), create a `.env` file:
+If your project requires API keys (OpenAI, Anthropic, etc.), create a `.env` file    I PERSONALLY USED GROQ_API_KEY:
 
 ```bash
 # Create .env file
 cp .env.example .env
 
 # Add your API keys
-# OPENAI_API_KEY=your_key_here
-# ANTHROPIC_API_KEY=your_key_here
+#GROQ_API_KEY=your_key_ere
 ```
 
 **Note**: Add `.env` to `.gitignore` to avoid committing secrets.
@@ -230,24 +195,6 @@ The system is optimized for:
 - Vector search with millisecond latency (with caching)
 - Batch query processing for scalability
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Make your changes and commit: `git commit -am 'Add your feature'`
-4. Push to the branch: `git push origin feature/your-feature`
-5. Submit a pull request
-
-## License
-
-This project is open source. Check the repository for license details.
-
-## Support
-
-For issues, questions, or suggestions:
-- Open an [issue](https://github.com/nkushwanth/NEW_HYBRID_RAG/issues) on GitHub
-- Check existing documentation and examples
-- Review the source code comments
 
 ## Additional Resources
 
