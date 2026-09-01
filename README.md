@@ -8,10 +8,10 @@ This project implements a sophisticated RAG pipeline that leverages hybrid searc
 
 ## Features
 
-- **Hybrid Retrieval**: Combines multiple search strategies for improved context retrieval
+- **Hybrid Retrieval**: Combines multiple search strategies for improved context retrieval BM25+ Vector Search
 - **PDF Processing**: Efficient handling and processing of PDF documents
 - **Vector Search**: Semantic search using embeddings
-- **Smart Caching**: Cached results for improved performance
+- **Smart Caching**: Cached results for improved performance  (Redis Semantic Cache)
 - **LLM Integration**: Seamless integration with language models for response generation
 
 ## Project Structure
