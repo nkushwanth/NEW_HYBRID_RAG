@@ -68,7 +68,7 @@ This command will:
 ## Usage
 
 ### Running the Application
-
+NOTE:Make Sure your Redis and Qdrant is connected properly 
 Execute the main script using uv:
 
 ```bash
